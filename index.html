@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Product preview card component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <title>Frontend Mentor | Product preview card component</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
     <main class="card">
       <div class="card__image">
-        <img src="./images/image-product-mobile.jpg" alt="Product image" />
-        <img src="./images/image-product-desktop.jpg" alt="Product image" />
+        <img src="./images/image-product-mobile.jpg" alt="Product image" class="hide-mobile" />
+        <img src="./images/image-product-desktop.jpg" alt="Product image" class="hide-desktop" />
       </div>
       <div class="card__content">
         <div class="subtitle">
@@ -45,15 +45,17 @@
           </p>
         </div>
         <div class="price">
-          <p>$149.99 <span>$169.99</span></p>
+          <p>$149.99</p><span>$169.99</span>
         </div>
         <div class="button">
-          <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
         </div>
       </div>
     </main>
-    <footer>
-      <p>Coded by Agustín Ramunno | Frontend Mentor Challenge</p>
-    </footer>
-  </body>
+  </div>
+  <footer>
+    <p>Coded by Agustín Ramunno | Frontend Mentor Challenge</p>
+  </footer>
+</body>
+
 </html>
