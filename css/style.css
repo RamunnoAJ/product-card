@@ -114,7 +114,7 @@ footer p {
   text-decoration: line-through;
 }
 
-.button button {
+.button {
   width: 100%;
   padding: 1.5rem 0;
   border: none;
@@ -123,9 +123,10 @@ footer p {
   border-radius: 0.5rem;
   font-weight: 700;
   transition: background-color .3s ease-in-out;
+  cursor: pointer;
 }
 
-.button button:hover {
+.button:hover {
   background-color: hsl(158, 37%, 24%);
 }
 
