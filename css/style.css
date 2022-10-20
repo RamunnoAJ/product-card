@@ -130,19 +130,7 @@ footer p {
   background-color: hsl(158, 37%, 24%);
 }
 
-.hide-desktop {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .hide-mobile {
-    display: none;
-  }
-
-  .hide-desktop {
-    display: block;
-  }
-
   .card {
     flex-direction: row;
     max-width: 60rem;
