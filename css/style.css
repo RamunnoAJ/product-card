@@ -49,12 +49,16 @@ footer p {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
   max-width: 32rem;
   margin: 0 auto;
   border-radius: 1.5rem;
   background-color: var(--white);
+}
+
+.card>* {
+  flex-basis: 50%;
 }
 
 .card__image img {
@@ -105,13 +109,12 @@ footer p {
   font-family: 'Fraunces', serif;
 }
 
-.price span {
+.price del {
   color: var(--grayish-blue);
   font-weight: 500;
   font-size: 1.4rem;
   margin-left: 2rem;
   font-family: 'Montserrat', sans-serif;
-  text-decoration: line-through;
 }
 
 .button {
